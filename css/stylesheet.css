@@ -1,0 +1,48 @@
+body {
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    color: white;
+    background-color: darkcyan;
+    padding: 20px 20px 20px;
+}
+
+header h1 {
+    text-align: left;
+    display: inline-block;
+}
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    color: aquamarine;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+a {
+    color: aquamarine;
+}
+
+header h2 {
+    color: darkcyan;
+    background-color: white;
+    padding: 20px 20px 20px;
+    text-align: right;
+}
+
+main h3 {
+    color: darkblue;
+    display: block;
+    margin-left: 100px;
+}
