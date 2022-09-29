@@ -1,11 +1,12 @@
 body {
     background-color: aquamarine;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Verdana, Tahoma, sans-serif;
+    color: darkblue;
 }
 
 header {
     color: white;
-    background-color: darkcyan;
+    background-image: url(../assets/portfolio-header.jpg);
     padding: 20px 20px 20px;
 }
 
@@ -25,13 +26,12 @@ header nav ul {
 }
 
 header nav ul li {
-    color: aquamarine;
     display: inline-block;
     margin-left: 50px;
 }
 
-a {
-    color: aquamarine;
+header nav ul li a {
+    color: white;
 }
 
 header h2 {
@@ -46,3 +46,4 @@ main h3 {
     display: block;
     margin-left: 100px;
 }
+
