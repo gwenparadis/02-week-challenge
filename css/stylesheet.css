@@ -2,48 +2,94 @@ body {
     background-color: aquamarine;
     font-family:Verdana, Tahoma, sans-serif;
     color: darkblue;
+    line-height: 150%;
 }
+
+
+/* @media (max-width 768px) {
+
+}
+*/
 
 header {
     color: white;
     background-image: url(../assets/portfolio-header.jpg);
     padding: 20px 20px 20px;
+    text-align: center;
 }
 
-header h1 {
-    text-align: left;
-    display: inline-block;
+img {
+    height:200px;
+    justify-content: center;
+    border-radius: 15px;
 }
 
-header nav {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
+h1 {
+    padding: 20px;
+    font-size: 200%;
 }
 
 header nav ul {
     list-style-type: none;
-}
-
-header nav ul li {
-    display: inline-block;
-    margin-left: 50px;
+    display: flex;
+    background-color: darkblue;
+    justify-content: space-between;
+    padding: 20px;
 }
 
 header nav ul li a {
     color: white;
 }
 
-header h2 {
-    color: darkcyan;
-    background-color: white;
+/* content area flexbox code */
+
+.about-me {
+    display:flex;
+    padding: 20px;
+}
+
+.about-me h3 {
+    flex:1;
+}
+
+.about-me p {
+    flex:3;
+}
+
+.work {
+    display: flex;
+    padding: 20px;
+}
+
+.work h3 {
+    flex:1;
+}
+
+.work ul {
+    flex:3;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-information {
+    display: flex;
+    padding: 20px;
+}
+
+.contact-information h3 {
+    flex:1;
+}
+
+.contact-information ul {
+    flex:3;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    text-align:center;
+    font-size: 75%;
+    color: white;
+    background-color: darkblue;
     padding: 20px 20px 20px;
-    text-align: right;
 }
-
-main h3 {
-    color: darkblue;
-    display: block;
-    margin-left: 100px;
-}
-
