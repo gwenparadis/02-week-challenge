@@ -51,16 +51,24 @@ header nav ul li a {
 
 .about-me h3, .work h3, .contact-info h3 {
     flex: 1;
+    text-align: right;
+    margin-right: 20px;
 }
 
 .about-me p {
-    flex: 3;
+    flex: 4;
 }
 
 .work ul, .contact-info ul {
     display: flex;
-    flex: 3;
+    flex-wrap: wrap;
+    flex: 4;
     justify-content: space-between;
+}
+
+.work ul a img:hover {
+    background-color: darkblue;
+    padding: 15px;
 }
 
 /*footer design elements*/
