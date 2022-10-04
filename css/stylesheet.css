@@ -1,15 +1,13 @@
+/*general design settings*/
+
 body {
     background-color: aquamarine;
-    font-family:Verdana, Tahoma, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
     color: darkblue;
     line-height: 150%;
 }
 
-
-/* @media (max-width 768px) {
-
-}
-*/
+/*header/heading and image settings*/
 
 header {
     color: white;
@@ -19,7 +17,7 @@ header {
 }
 
 img {
-    height:200px;
+    height: 200px;
     justify-content: center;
     border-radius: 15px;
 }
@@ -28,6 +26,8 @@ h1 {
     padding: 20px;
     font-size: 200%;
 }
+
+/*navigation links*/
 
 header nav ul {
     list-style-type: none;
@@ -41,53 +41,32 @@ header nav ul li a {
     color: white;
 }
 
-/* content area flexbox code */
+/* content area flexbox code, consolidated when possible */
 
-.about-me {
-    display:flex;
+.about-me, .work, .contact-info {
+    display: flex;
     padding: 20px;
+    justify-content: space-between;
 }
 
-.about-me h3 {
-    flex:1;
+.about-me h3, .work h3, .contact-info h3 {
+    flex: 1;
 }
 
 .about-me p {
-    flex:3;
+    flex: 3;
 }
 
-.work {
+.work ul, .contact-info ul {
     display: flex;
-    padding: 20px;
-}
-
-.work h3 {
-    flex:1;
-}
-
-.work ul {
-    flex:3;
-    display: flex;
+    flex: 3;
     justify-content: space-between;
 }
 
-.contact-information {
-    display: flex;
-    padding: 20px;
-}
-
-.contact-information h3 {
-    flex:1;
-}
-
-.contact-information ul {
-    flex:3;
-    display: flex;
-    justify-content: space-between;
-}
+/*footer design elements*/
 
 footer {
-    text-align:center;
+    text-align: center;
     font-size: 75%;
     color: white;
     background-color: darkblue;
