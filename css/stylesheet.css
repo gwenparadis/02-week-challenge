@@ -16,7 +16,7 @@ header {
     text-align: center;
 }
 
-img {
+header img {
     height: 200px;
     justify-content: center;
     border-radius: 15px;
@@ -25,11 +25,12 @@ img {
 h1 {
     padding: 20px;
     font-size: 200%;
+    color: white;
 }
 
 /*navigation links*/
 
-header nav ul {
+header nav {
     list-style-type: none;
     display: flex;
     background-color: darkblue;
@@ -37,11 +38,19 @@ header nav ul {
     padding: 20px;
 }
 
-header nav ul li a {
+header nav a {
     color: white;
 }
 
-/* content area flexbox code, consolidated when possible */
+a:hover {
+    color: hotpink;
+}
+
+/* content area flexbox code, main styling consolidated when possible */
+
+main {
+    max-width: 88%;
+}
 
 .about-me, .work, .contact-info {
     display: flex;
@@ -55,19 +64,31 @@ header nav ul li a {
     margin-right: 20px;
 }
 
-.about-me p {
-    flex: 4;
-}
-
-.work ul, .contact-info ul {
+.about-me p, .work div, .contact-info ul {
     display: flex;
     flex-wrap: wrap;
     flex: 4;
     justify-content: space-between;
 }
 
-.work ul a img:hover {
-    background-color: darkblue;
+/* make first work link larger, img flex for smaller screens, hover effect for link*/
+
+.work div a:first-child {
+    flex-basis: 100%;
+}
+
+.work div a {
+    flex: 1 0 350px;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.work a img:hover {
+    background-color: hotpink;
     padding: 15px;
 }
 
