@@ -6,7 +6,7 @@ I created this portfolio in order to begin to showcase my work as a web develope
 
 ## Installation
 
-This webpage can be accessed on Github Pages, at the link: https://gwenparadis.io.github.com/02-week-challenge
+This webpage can be accessed on Github Pages, at the link: https://gwenparadis.github.io/02-week-challenge/
 
 ## Usage
 
